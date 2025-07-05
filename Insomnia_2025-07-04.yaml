@@ -1,0 +1,407 @@
+type: collection.insomnia.rest/5.0
+name: agenda
+meta:
+  id: wrk_844f83797f6049e1ba90abee87efc638
+  created: 1751673568531
+  modified: 1751673568531
+  description: ""
+collection:
+  - name: proveedor
+    meta:
+      id: fld_00c8fc81d7684abba59d72ef2dba77c5
+      created: 1751673587437
+      modified: 1751673587437
+      sortKey: -1751673587437
+      description: ""
+    children:
+      - url: http://[::1]:3000
+        name: post
+        meta:
+          id: req_d3e83b546d534cca883e8ccc1531bba4
+          created: 1751673577080
+          modified: 1751673983443
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733609
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: put
+        meta:
+          id: req_9bee7b0005864d359025e4bb01037d1e
+          created: 1751673756887
+          modified: 1751673986071
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733709
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: delete
+        meta:
+          id: req_6f31339115fd404d89ffe722bc900864
+          created: 1751673780224
+          modified: 1751673980578
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733509
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: get
+        meta:
+          id: req_09f17901eb7741c784810d342b1fa297
+          created: 1751673804573
+          modified: 1751673970307
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733809
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: categoria
+    meta:
+      id: fld_9ecaa734fd2b4cfea4ebfcd533311aed
+      created: 1751673878909
+      modified: 1751673878909
+      sortKey: -1751673587387
+      description: ""
+    children:
+      - url: http://[::1]:3000/categoria-instrumento
+        name: post
+        meta:
+          id: req_05e64fb7c549448f96de07b4b9c3b279
+          created: 1751673878912
+          modified: 1751674493535
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733609
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nombre": "Ortopedia",
+              "descripcion": "Instrumentos utilizados en cirugía ortopédica."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento/1
+        name: pacht
+        meta:
+          id: req_e5c816f0fbd84290a3d7bac54555c33b
+          created: 1751673878914
+          modified: 1751674704593
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733709
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: >
+            {
+              "nombre": "Cirugía Plástica",
+              "descripcion": "Categoría enfocada en procedimientos reconstructivos y estéticos."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento/1
+        name: delete
+        meta:
+          id: req_6baccaeae8af457f83d9e24d36eb1f5f
+          created: 1751673878918
+          modified: 1751674731399
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733509
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000/categoria-instrumento
+        name: get
+        meta:
+          id: req_8f637328f9f74c4f9ee3a4e6b3b2b4b1
+          created: 1751673878920
+          modified: 1751674163217
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733809
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: instrumento
+    meta:
+      id: fld_c249b7deeb9c4dee925748dddbf5d29a
+      created: 1751673893628
+      modified: 1751673893628
+      sortKey: -1751673587412
+      description: ""
+    children:
+      - url: http://[::1]:3000
+        name: post
+        meta:
+          id: req_b6f52ac13c734ab298f776e88ce0a5d3
+          created: 1751673893629
+          modified: 1751674007086
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733609
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: put
+        meta:
+          id: req_2a8bab70f25f4b38940c84a5c21d98de
+          created: 1751673893631
+          modified: 1751674004671
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733709
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: delete
+        meta:
+          id: req_89b8fcc8b3ce49f1966696afbd4d7af8
+          created: 1751673893632
+          modified: 1751674009417
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733509
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: get
+        meta:
+          id: req_005d854fe7c14d6b9a5ead2d950b53f5
+          created: 1751673893633
+          modified: 1751674001985
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733809
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: ubicacion
+    meta:
+      id: fld_fb9f154abd6a49548b67d2f3fa34b94b
+      created: 1751673906003
+      modified: 1751673906003
+      sortKey: -1751673587424.5
+      description: ""
+    children:
+      - url: http://[::1]:3000
+        name: post
+        meta:
+          id: req_62e109b855a640b995f9d90c4df6bc31
+          created: 1751673906005
+          modified: 1751673993966
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733609
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: put
+        meta:
+          id: req_ce2d34abf50243f384d2cc8401346e84
+          created: 1751673906006
+          modified: 1751673996279
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733709
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: delete
+        meta:
+          id: req_f0fd5b25f7e049c582fc04d3f3526a3e
+          created: 1751673906007
+          modified: 1751673998460
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733509
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://[::1]:3000
+        name: get
+        meta:
+          id: req_005f4858087b464aa0cdbb5eb39b28f6
+          created: 1751673906008
+          modified: 1751673991112
+          isPrivate: false
+          description: ""
+          sortKey: -1751673733809
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3d940cfe72584cb56b1511bc5c55a405c171c607
+    created: 1751673568544
+    modified: 1751673568544
+environments:
+  name: Base Environment
+  meta:
+    id: env_3d940cfe72584cb56b1511bc5c55a405c171c607
+    created: 1751673568540
+    modified: 1751673568540
+    isPrivate: false
